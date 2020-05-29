@@ -1,1 +1,1 @@
-# xboard_memtest
+Sega X-Board Memory Test Software

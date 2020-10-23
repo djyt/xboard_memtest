@@ -374,7 +374,7 @@ _memtest_done:
     
     # 2E0000-2E3FFF : Hardware multiplier (315-5248, IC30). Actually IC37 on the PCB, AfterBurner gets this wrong. 
     WATCHDOG_CLEAR
-    PRINT   _str_ic30, COLOR_YELLOW
+    PRINT   _str_ic37, COLOR_YELLOW
     lea     HW_DIVIDE2, %a0         /* Yes this is correct, the test function uses an offset */
     CALL_A5 testMultiplier
     tst.w   %d0
@@ -387,7 +387,7 @@ _custom1_ok:
     # 2E4000-2E7FFF : Hardware divider (315-5249, IC37). Actually IC41 on the PCB, AfterBurner gets this wrong.
 _custom2:
     WATCHDOG_CLEAR
-    PRINT   _str_ic37, COLOR_YELLOW
+    PRINT   _str_ic41, COLOR_YELLOW
     lea     HW_DIVIDE2, %a0
     CALL_A5 testDivider
     tst.w   %d0
@@ -540,10 +540,10 @@ _str_db:
 .asciz " DB"
 _str_dev:
 .asciz " DEV"
-_str_ic30:
-.asciz "CUSTOMS IC30 "
 _str_ic37:
-.asciz " IC37 "
+.asciz "CUSTOMS IC37 "
+_str_ic41:
+.asciz " IC41 "
 _str_ic53:
 .asciz " IC53 "
 _str_ic107:

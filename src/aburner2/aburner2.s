@@ -7,7 +7,7 @@
 .section .rodata
 
 _str_titlemessage:
-.asciz "     AFTERBURNER MEMORY TEST V0.1"
+.asciz "    AFTERBURNER MEMORY TEST V0.11"
 
 # Palette Based on AfterBurner 2. Populated from 0x123800 onwards.
 .align 2
